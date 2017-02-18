@@ -13,6 +13,7 @@
 		9680E77B1E572E150041A5EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9680E77A1E572E150041A5EC /* Assets.xcassets */; };
 		9680E77E1E572E150041A5EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9680E77C1E572E150041A5EC /* LaunchScreen.storyboard */; };
 		9680E7891E572E150041A5EC /* ios_social_slcomposeviewcontroller_demoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9680E7881E572E150041A5EC /* ios_social_slcomposeviewcontroller_demoTests.swift */; };
+		9680E7951E5733B60041A5EC /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9680E7941E5733B60041A5EC /* Social.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		9680E7841E572E150041A5EC /* ios-social-slcomposeviewcontroller-demoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-social-slcomposeviewcontroller-demoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9680E7881E572E150041A5EC /* ios_social_slcomposeviewcontroller_demoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_social_slcomposeviewcontroller_demoTests.swift; sourceTree = "<group>"; };
 		9680E78A1E572E150041A5EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9680E7941E5733B60041A5EC /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9680E7951E5733B60041A5EC /* Social.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +65,7 @@
 				9680E7721E572E150041A5EC /* ios-social-slcomposeviewcontroller-demo */,
 				9680E7871E572E150041A5EC /* ios-social-slcomposeviewcontroller-demoTests */,
 				9680E7711E572E150041A5EC /* Products */,
+				9680E7931E5733B60041A5EC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,6 +98,14 @@
 				9680E78A1E572E150041A5EC /* Info.plist */,
 			);
 			path = "ios-social-slcomposeviewcontroller-demoTests";
+			sourceTree = "<group>";
+		};
+		9680E7931E5733B60041A5EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9680E7941E5733B60041A5EC /* Social.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,7 +158,7 @@
 				TargetAttributes = {
 					9680E76F1E572E150041A5EC = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = PCCZJUYRT6;
+						DevelopmentTeam = 5Q99YHA359;
 						ProvisioningStyle = Automatic;
 					};
 					9680E7831E572E150041A5EC = {
@@ -341,8 +353,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = PCCZJUYRT6;
+				DEVELOPMENT_TEAM = 5Q99YHA359;
 				INFOPLIST_FILE = "ios-social-slcomposeviewcontroller-demo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.st-ventures.ios-social-slcomposeviewcontroller-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -354,8 +367,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = PCCZJUYRT6;
+				DEVELOPMENT_TEAM = 5Q99YHA359;
 				INFOPLIST_FILE = "ios-social-slcomposeviewcontroller-demo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.st-ventures.ios-social-slcomposeviewcontroller-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -412,6 +426,7 @@
 				9680E78F1E572E150041A5EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9680E7901E572E150041A5EC /* Build configuration list for PBXNativeTarget "ios-social-slcomposeviewcontroller-demoTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +435,7 @@
 				9680E7921E572E150041A5EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
