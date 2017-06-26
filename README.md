@@ -13,7 +13,7 @@ iOS標準の「設定」アプリで利用するSNS（TwitterやFacebookなど�
 　
 ## サンプルアプリの実装手順
 1. Linked Frameworks and LibrariesからSocial.frameworkを読み込みます。
-2. ViewControllerでSocial.frameworkをインポートします。
+2. ViewControllerでSocial.frameworkをインポートします。(`import Social`)
 3. storyboardからViewControllerに紐付けた`UIButton`のアクションを２つ（Twitter用とFacebook用）作成します
 4. 各アクション内で`SLComposeViewController`の設定を行い、表示します
 
