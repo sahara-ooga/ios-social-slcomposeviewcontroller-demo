@@ -10,29 +10,6 @@ import UIKit
 import Social
 
 final class ViewController: UIViewController {
-
-    // SLComposeViewControllerの設定
-    private func configure(_ composeViewController: SLComposeViewController) {
-            // デフォルトのテキスト（Facebookだと表示されない）
-            composeViewController.setInitialText("デフォルトで表示されるテキスト")
-            
-            // 画像をセット（Facebookだと表示されない）
-            composeViewController.add(#imageLiteral(resourceName: "stv"))
-
-            // URLをセット（Twitterだと表示されないが、画像セットを削除 or コメントアウトすれば表示される）
-            composeViewController.add(URL(string: "http://www.st-ventures.jp/"))
-
-            // 投稿後に呼ばれるハンドラ
-            composeViewController.completionHandler = { (result:SLComposeViewControllerResult) -> Void in
-                switch result {
-                case .done:
-                    print("result is done")
-                case .cancelled:
-                    print("result is cancelled")
-                }
-            }
-    }
-
     // MARK: - Action
 
     // Twitter
@@ -65,5 +42,28 @@ final class ViewController: UIViewController {
         configure(composeViewController)
         // 表示
         present(composeViewController, animated: true, completion: nil)
+    }
+    
+    //MARK: Configuration
+    // SLComposeViewControllerの設定
+    private func configure(_ composeViewController: SLComposeViewController) {
+        // デフォルトのテキスト（Facebookだと表示されない）
+        composeViewController.setInitialText("デフォルトで表示されるテキスト")
+        
+        // 画像をセット（Facebookだと表示されない）
+        composeViewController.add(#imageLiteral(resourceName: "stv"))
+        
+        // URLをセット（Twitterだと表示されないが、画像セットを削除 or コメントアウトすれば表示される）
+        composeViewController.add(URL(string: "http://www.st-ventures.jp/"))
+        
+        // 投稿後に呼ばれるハンドラ
+        composeViewController.completionHandler = { (result:SLComposeViewControllerResult) -> Void in
+            switch result {
+            case .done:
+                print("result is done")
+            case .cancelled:
+                print("result is cancelled")
+            }
+        }
     }
 }
